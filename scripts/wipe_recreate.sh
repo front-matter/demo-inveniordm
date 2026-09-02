@@ -29,6 +29,7 @@ invenio shell --no-term-title -c "import redis; redis.StrictRedis.from_url(app.c
 #       Just need to drop all tables from it.
 invenio db drop --yes-i-know
 invenio index destroy --force --yes-i-know
+invenio shell --no-term-title scripts/wipe_stats_indices.py
 invenio index queue init purge
 # NOTE: contents only, the directory itself is a mounted volume.
 if [ -d "$instance_data" ]; then
