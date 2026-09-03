@@ -1,6 +1,6 @@
 [project]
 name = "demo-inveniordm-app"
-version = "14.0.0"
+version = "14.1.0"
 authors = [{ name = "CERN", email = "info@inveniosoftware.org" }]
 license = "MIT"
 requires-python = "~=3.14.0"
